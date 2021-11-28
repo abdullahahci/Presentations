@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Mate+SC&family=Odibee+Sans&family=Roboto:wght@300&display=swap");
+@font-face {
+  font-family: Pops;
+  src: url(fonts/Poppins-Black.ttf);
+}
+
+* {
+  font-family: "Pops", "Roboto", sans-serif;
+}
+h1 {
+  font-family: "Mate SC", serif;
+}

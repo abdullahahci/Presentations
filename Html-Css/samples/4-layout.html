@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        background: #8ad8c6;
+        padding: 10px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+      }
+      nav ul a {
+        color: inherit;
+        text-decoration: none;
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        padding: 5px;
+      }
+      nav ul a:hover {
+        border-style: ridge;
+      }
+      aside {
+        float: right;
+        width: 30%;
+        height: 700px;
+        background-color: khaki;
+        padding: 20px;
+      }
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 175px; /* only for demonstration, should be removed */
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>header for the layout</header>
+    <nav>
+      <h1>Nav</h1>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/design">Design</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Section</h1>
+    </section>
+    <aside>
+      <h1>Aside</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ducimus
+        ullam, asperiores placeat fugiat veniam illum! Harum placeat praesentium
+        corporis dolor dolore reprehenderit, similique impedit minus quidem,
+        voluptas qui nihil!
+      </p>
+      <p>
+        Architecto eos ipsam consectetur illo repellat nisi similique maiores
+        tempora odio corrupti doloremque placeat amet atque iusto assumenda qui,
+        aliquid, exercitationem quis sapiente? Necessitatibus quos nostrum error
+        corporis quidem impedit!
+      </p>
+      <p>
+        Nostrum repellat necessitatibus, saepe voluptate sequi recusandae magni
+        iure, quaerat explicabo quibusdam voluptas neque eligendi accusamus
+        rerum dolor cupiditate fugit nam! Incidunt, impedit. Nam id aperiam, ex
+        eum ipsa ipsam.
+      </p>
+      <p>
+        Odit labore quibusdam, consequuntur illum voluptatibus porro veritatis,
+        fuga voluptas atque rerum iste earum similique quidem accusantium qui
+        magnam velit debitis. Voluptatem cumque similique quasi, reprehenderit
+        quibusdam ut vitae pariatur.
+      </p>
+    </aside>
+    <article>
+      <h1>Article 1</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+      quibusdam, ducimus eius placeat suscipit quis delectus molestias
+      dignissimos reprehenderit tempore optio enim iure quasi expedita facere
+      quae nobis perspiciatis cum. Aspernatur nulla exercitationem earum
+      commodi. Aut animi maiores recusandae omnis, voluptates aspernatur, rerum
+      dignissimos culpa illo quae cumque quis natus.
+    </article>
+    <article>
+      <h1>Article 2</h1>
+      Repudiandae dolorem sed odio esse! A voluptates voluptatem nostrum unde
+      vero! Culpa natus, eaque corrupti sint, delectus vero ullam accusamus quas
+      facilis illo tempora cum est ex odio aspernatur, ea veniam odit totam modi
+      velit laborum. Maxime sint sunt voluptates natus nostrum quas suscipit a
+      recusandae consectetur ut. Sunt, nemo.
+    </article>
+    <article>
+      <h1>Article 3</h1>
+      Odio alias sint officiis modi. Laudantium, inventore. Qui nobis culpa,
+      cupiditate dolores corporis accusantium beatae blanditiis consequuntur
+      enim praesentium eius rerum doloribus excepturi, fugiat veniam accusamus
+      aperiam aliquid dolor saepe? Nostrum facilis assumenda iusto unde modi,
+      corporis qui incidunt pariatur tempore doloremque placeat a, repellat
+      ducimus at nisi nesciunt eveniet!
+    </article>
+    <article>
+      <h1>Article 4</h1>
+      Nemo dolorum at ad possimus deserunt. Ipsa aspernatur obcaecati odit
+      ipsum, laboriosam, dignissimos asperiores facilis est, nulla enim
+      accusantium corporis aliquid. Sequi, amet voluptas? Optio quam, quisquam
+      molestias voluptates omnis ad corporis perferendis sed nulla? Libero
+      ratione rem doloremque sunt qui, quas ex est exercitationem reiciendis,
+      delectus nam hic accusamus!
+    </article>
+    <footer>Footer of the layout</footer>
+  </body>
+</html>
