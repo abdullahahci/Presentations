@@ -1,0 +1,31 @@
+version: "3"
+services:
+  web:
+    build: ./web
+    restart: on-failure
+    ports:
+      - "8080:8080"
+    networks:
+      - multi
+    depends_on:
+      - mysqldb
+  mysqldb:
+    platform: linux/amd64
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: multidb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: p455w0rd
+      MYSQL_ROOT_PASSWORD: p455w0rd
+    networks:
+      - multi
+    volumes:
+      - data:/var/lib/mysql
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+volumes:
+  data:
+networks:
+  multi:
